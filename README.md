@@ -9,4 +9,4 @@ Promises
 * see promisify.js
 
 Async/Await
-* see asyncawait.js (coming soon)
+* see asyncawait.js
