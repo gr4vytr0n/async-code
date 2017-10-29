@@ -6,4 +6,4 @@ Callbacks -- error-first callbacks
 
 Promises
 * see promises.js
-* see promisify.js (coming soon)
+* see promisify.js
