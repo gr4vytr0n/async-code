@@ -10,10 +10,23 @@ const readPromise = promisify(readFile)
 const readAnimals = readPromise('animals.txt', 'utf-8')
 const readTrees = readPromise('trees.txt', 'utf-8')
 
-// use Promis.all to run asynchronous code in parallel
 const readFiles = Promise.all([readAnimals, readTrees])
 
-readFiles
+// use async/await to handle Promises and use Promise.all to run
+// asynchronous functions in parallel
+async function readFileAA(file) {
+    let result = undefined
+
+    try {
+        result = await readFiles
+    } catch(e) {
+        result = e
+    }
+
+    return result
+}
+
+readFileAA()
     .then(data => {
         let [ animals, trees ] = data
         

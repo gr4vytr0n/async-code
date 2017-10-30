@@ -11,3 +11,4 @@ Promises
 
 Async/Await
 * see asyncawait.js
+* see asyncawaitpromiseall.js
